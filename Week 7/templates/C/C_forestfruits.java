@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main{  
+class Main{  
     // Make sure the class name is Main if you use this template
     static class Edge{
         int v, w;

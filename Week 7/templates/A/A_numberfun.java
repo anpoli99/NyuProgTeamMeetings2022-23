@@ -1,8 +1,9 @@
 import java.io.*;
 import java.util.*;
 
-public class Main{  
+class Main{  
     // Make sure the class name is Main if you use this template
+
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int qr = Integer.parseInt(br.readLine());

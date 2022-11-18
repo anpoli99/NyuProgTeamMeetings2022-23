@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main{  
+class Main{  
     // Make sure the class name is Main if you use this template
 
     // Input format: x[0],y[0] = start, x[n - 1],y[n - 1] = end
