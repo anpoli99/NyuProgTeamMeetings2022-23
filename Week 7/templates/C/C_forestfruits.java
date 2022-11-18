@@ -24,11 +24,11 @@ public class Main{
         for(int i = 1; i <= v; i++) adj[i] = new ArrayList<Edge>();
         for(int i = 0; i < e; i++){
             st = new StringTokenizer(br.readLine());
-            int u = Integer.parseInt(st.nextToken());
-            int v = Integer.parseInt(st.nextToken());
+            int x = Integer.parseInt(st.nextToken());
+            int y = Integer.parseInt(st.nextToken());
             int w = Integer.parseInt(st.nextToken());
-            adj[u].add(new Edge(v,w));
-            adj[v].add(new Edge(u,w));
+            adj[x].add(new Edge(y,w));
+            adj[y].add(new Edge(x,w));
             // Input format: adj[u] has a list of edges (v,w) where v is the destination vertex and w is the weight
         }
         // Your code to find the shortest path to gather flowers goes here
