@@ -6,8 +6,10 @@ def kitten(a, k):
 
 k = int(input())
 a = []
-for i in range(k):
+while True:
     a.append(list(map(int, input().split())))
-    if a[i][0] == -1: break
+    if a[-1][0] == -1:
+        a = a[:-1]
+        break
 
 print(kitten(a, k))

@@ -15,7 +15,7 @@ class Main{
 
         int k = Integer.parseInt(in.readLine());
         ArrayList<ArrayList> a = new ArrayList<ArrayList>();
-        for(int i = 0; i < k; i++){
+        while(true){
             StringTokenizer st = new StringTokenizer(in.readLine());
             ArrayList<Integer> cur = new ArrayList<Integer>();
             cur.add(Integer.parseInt(st.nextToken()));
