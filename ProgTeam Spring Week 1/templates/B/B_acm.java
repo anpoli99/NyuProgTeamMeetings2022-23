@@ -9,6 +9,7 @@ class Main{
         StringTokenizer st;
         int time_solved;
         int score = 0, penalty = 0;
+        // Add any auxiliary variables you need here
         while(true){
             st = new StringTokenizer(br.readLine());
             time_solved = Integer.parseInt(st.nextToken());
