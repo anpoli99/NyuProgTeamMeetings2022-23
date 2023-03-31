@@ -1,0 +1,1 @@
+We can greedily update our best blade as the pieces get smaller. Be careful about edge cases where we can already use a given blade! 

@@ -1,0 +1,1 @@
+100 is small enough for us to check every string; the hardest part of this problem is updating each new string.
