@@ -1,6 +1,0 @@
-
-Here is the system for ICPC scoring:
-You get one point for each problem.
-Your penalty for that problem is (time that you solved it) + 20 * (wrong submissions for that problem)
-There is no penalty for a problem you didn't solve!
-Output the sum of scores and penalties for an ICPC team given their logs
