@@ -1,2 +1,0 @@
-There's an implicit graph with edges for neighboring volcanos (weight b_i), and an implicit "root" which has 
-an edge to all c_i with cost a_i. 

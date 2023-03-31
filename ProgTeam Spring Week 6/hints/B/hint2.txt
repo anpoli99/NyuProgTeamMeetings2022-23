@@ -1,1 +1,0 @@
-The line that there is at most 5000 days is important! It implies there's enough time for us to just check every day.

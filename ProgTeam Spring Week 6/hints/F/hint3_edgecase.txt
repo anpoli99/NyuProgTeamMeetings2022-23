@@ -1,1 +1,0 @@
-Make sure you consider both even and odd length palindromes!
