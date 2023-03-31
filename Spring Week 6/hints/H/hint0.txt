@@ -1,2 +1,2 @@
 Finding a solution with minimum weight is not so hard, but finding the lexicographically earliest
-is harder than it may seem at first glance.
+is much harder than it may seem at first glance.
