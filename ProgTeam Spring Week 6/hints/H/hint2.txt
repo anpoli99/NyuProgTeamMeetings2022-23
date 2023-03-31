@@ -1,0 +1,6 @@
+I imagine it is hard to create a solution to this problem that does not involve DFSing the implicit tree;
+notice that the number of flips for a child is the same as the number of parents we haven't added to our list
+yet. We don't want to take a parent of a child with positive value first, but across children (or parents with
+no "ready" children) with positive OR ZERO value, we need to find the lexicographically earliest in the tree.
+We can both check if a vertex is ready to be removed and find the lexicographically earliest "ready" vertex
+in one pass of a DFS on a tree.
