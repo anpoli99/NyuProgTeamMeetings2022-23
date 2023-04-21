@@ -7,6 +7,7 @@ using namespace std;
 // topological sort problem, but we need to be careful
 // with the order of the edges.
 
+using ll = long long;
 const int N = 5e5 + 5;
 bool starting_left[N];
 int left_side[N], right_side[N];
@@ -27,7 +28,11 @@ int main(){
         parent[right_side[i]]++;
     }
     a[1] = k;
-    queue<int> q({1});
+    queue<int> q;
+    for(int i = 1; i <= n; i++){
+        if(parent[i] == 0) q.push(i);
+    }
+
     while(!q.empty()){
         int u = q.front();
         q.pop();
@@ -44,8 +49,8 @@ int main(){
             }
         }
         parent[left_side[u]]--;
-        parent[right_side[u]]--;
         if(parent[left_side[u]] == 0) q.push(left_side[u]);
+        parent[right_side[u]]--;
         if(parent[right_side[u]] == 0) q.push(right_side[u]);
     }
     for(int i = 1; i <= n; i++){
