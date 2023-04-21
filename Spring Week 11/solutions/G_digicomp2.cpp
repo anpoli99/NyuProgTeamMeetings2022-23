@@ -30,7 +30,7 @@ int main(){
     a[1] = k;
     queue<int> q;
     for(int i = 1; i <= n; i++){
-        if(parent[i] == 0) q.push(i);
+        if(parent[i] == 0) q.push(i); // Edge case! There can still be "dead" parents besides 1
     }
 
     while(!q.empty()){
@@ -49,7 +49,7 @@ int main(){
             }
         }
         parent[left_side[u]]--;
-        if(parent[left_side[u]] == 0) q.push(left_side[u]);
+        if(parent[left_side[u]] == 0) q.push(left_side[u]); // Edge case! This must go before the next line, in case left == right
         parent[right_side[u]]--;
         if(parent[right_side[u]] == 0) q.push(right_side[u]);
     }
