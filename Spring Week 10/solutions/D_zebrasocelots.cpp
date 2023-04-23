@@ -13,7 +13,7 @@ using namespace std;
 // above. So the answer is just the sum of the number of steps for each ocelot:
 // This is the same as converting the string into a binary number. 
 //
-// An alternate way of getting to the same answer using the second observation, that's
+// An alternate way of getting to the same answer using the second observation that's
 // more formal:
 // The number of steps for an ocelot in the k-th position is equal to:
 // f(k) = sum[j=0...k - 1] f(j) + 1
