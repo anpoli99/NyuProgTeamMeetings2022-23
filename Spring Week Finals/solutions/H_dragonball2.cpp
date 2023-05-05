@@ -16,12 +16,12 @@ using namespace std;
 // it used seven different colors. What's the probability of this
 // solution working? If there's exactly one optimal solution, then
 // the probability that each ball is assigned to the same color is
-// 1/(2^6). So if we repeat this 300 times, we're very to randomly
+// 1/(2^6). So if we repeat this 600 times, we're very likely to randomly
 // find a solution.
 // 
 // The total runtime is: log(2^7 * N) * 2^7 * N * T, where N is the
 // size of the graph and T is the number of trials. For N = 1000 and
-// T = 300, this is about 6 * 10^8. With 16 seconds, this is enough
+// T = 600, this is about 10^9. With 16 seconds, this is enough
 // to pass.
 
 
@@ -83,7 +83,7 @@ int main(){
 
     srand(time(NULL));
     int ans = INF;
-    for(int i = 0; i < 1000; i++){
+    for(int i = 0; i < 600; i++){
         for(int j = 1; j <= k; j++){
             color_map[color[j]] = rand() % 7;
         }
